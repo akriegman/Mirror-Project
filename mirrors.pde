@@ -1,10 +1,15 @@
 import java.util.*;
 
+//Change the preset mirror arrangement below.
+//Click to move the origin of the ray. It shoots towards your cursor.
+//A few arrangements are coded in below, but the classes developed here
+//can be used in many ways.
+
 PVector origin;
 List<Mirror> obstacles; //this is the mirror arrangement
 float epsilon = 0.01;
 String[] modes = {"random lines", "focus", "two ellipses", "two lines"};
-String mode = modes[0]; //play with this variable to see the different presets
+String mode = modes[2]; //play with this variable to see the different presets
 int brightness = 300; //number of times a light ray will reflect
 
 void setup(){
